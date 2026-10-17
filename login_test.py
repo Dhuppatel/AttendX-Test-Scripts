@@ -14,8 +14,15 @@ def test_empty_username():
     assert username == ""
 
     print("Empty username validation test passed")
+def test_password_presence():
+    password = "test123"
+
+    assert len(password) > 0
+
+    print("Password presence test passed")
 
 
 if __name__ == "__main__":
     test_valid_login()
+    test_password_presence()
     test_empty_username()
